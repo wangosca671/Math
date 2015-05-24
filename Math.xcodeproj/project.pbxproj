@@ -14,6 +14,7 @@
 		4F6E06131A25F16300A65F06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6E06121A25F16300A65F06 /* Images.xcassets */; };
 		4F6E06161A25F16300A65F06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6E06141A25F16300A65F06 /* LaunchScreen.xib */; };
 		4F6E06221A25F16300A65F06 /* MathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E06211A25F16300A65F06 /* MathTests.m */; };
+		4F6E06301A2601D400A65F06 /* math.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E062E1A2601D400A65F06 /* math.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,10 @@
 		4F6E061B1A25F16300A65F06 /* MathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6E06201A25F16300A65F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F6E06211A25F16300A65F06 /* MathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathTests.m; sourceTree = "<group>"; };
+		4F6E062D1A25F77900A65F06 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		4F6E062E1A2601D400A65F06 /* math.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = math.mm; sourceTree = "<group>"; };
+		4F6E062F1A2601D400A65F06 /* math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math.h; sourceTree = "<group>"; };
+		4F6E06311A2608B600A65F06 /* iostream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iostream.h; path = "../../../Downloads/C标准库源代码/C标准库源代码/iostream.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +89,11 @@
 				4F6E06091A25F16300A65F06 /* AppDelegate.h */,
 				4F6E060A1A25F16300A65F06 /* AppDelegate.m */,
 				4F6E060C1A25F16300A65F06 /* ViewController.h */,
+				4F6E062E1A2601D400A65F06 /* math.mm */,
+				4F6E062F1A2601D400A65F06 /* math.h */,
+				4F6E062D1A25F77900A65F06 /* stdafx.h */,
 				4F6E060D1A25F16300A65F06 /* ViewController.m */,
+				4F6E06311A2608B600A65F06 /* iostream.h */,
 				4F6E060F1A25F16300A65F06 /* Main.storyboard */,
 				4F6E06121A25F16300A65F06 /* Images.xcassets */,
 				4F6E06141A25F16300A65F06 /* LaunchScreen.xib */,
@@ -96,8 +105,8 @@
 		4F6E06051A25F16300A65F06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F6E06061A25F16300A65F06 /* Info.plist */,
 				4F6E06071A25F16300A65F06 /* main.m */,
+				4F6E06061A25F16300A65F06 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6E06301A2601D400A65F06 /* math.mm in Sources */,
 				4F6E060E1A25F16300A65F06 /* ViewController.m in Sources */,
 				4F6E060B1A25F16300A65F06 /* AppDelegate.m in Sources */,
 				4F6E06081A25F16300A65F06 /* main.m in Sources */,
@@ -345,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Math/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Math/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +426,7 @@
 				4F6E06271A25F16300A65F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F6E06281A25F16300A65F06 /* Build configuration list for PBXNativeTarget "MathTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				4F6E062A1A25F16300A65F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
